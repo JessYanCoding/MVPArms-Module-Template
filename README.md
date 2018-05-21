@@ -21,7 +21,7 @@
 ## 如何使用?
 使用时按下图步骤即可, 也可以使用快捷键, **Mac** 的快捷键是在项目名上按 **Command + n**, 选择  **Module**, **Windows** 快捷键自己百度
 
-![step](art/step.jpeg)
+![step](art/step.jpg)
 
 ## 注意事项
 * 本模板是基于 [MVPArms](https://github.com/JessYanCoding/MVPArms) 开发的, 所以使用的是 **MVPArms** 的整体架构, 模板依赖了 **MVPArms** 官方工程中的一些文件如 [config.gradle](https://github.com/JessYanCoding/MVPArms/blob/master/config.gradle), 最优的方式是直接 **clone** 或下载 **MVPArms** 的官方工程后, 在工程上面直接使用本模板, 开始业务的开发, 让您免于项目繁琐配置的烦恼
@@ -30,6 +30,6 @@
 
 * 此模板会持续保持更新, 但只保证能够兼容最新的 **AndroidStudio 稳定版**, 暂不提供其他版本
 
-  ![attention-1](art/attention.jpeg)
+  ![attention-1](art/attention.jpg)
 
   ![attention-2](https://raw.githubusercontent.com/JessYanCoding/ArmsComponent-Template/master/art/attention-2.jpeg)
