@@ -20,6 +20,10 @@
 
     <merge from="root/settings.gradle.ftl"
              to="${escapeXmlAttribute(topOut)}/settings.gradle" />
+    <merge from="root/root-build.gradle.ftl"
+             to="${escapeXmlAttribute(topOut)}/build.gradle" />         
+    <copy from="root/config.gradle"
+                   to="${escapeXmlAttribute(topOut)}/config.gradle" />
 
     <instantiate from="root/build.gradle.ftl"
                    to="${escapeXmlAttribute(projectOut)}/build.gradle" />
