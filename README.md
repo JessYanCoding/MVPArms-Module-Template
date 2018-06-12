@@ -25,7 +25,7 @@
 ![step](art/step.jpg)
 
 ## 注意事项
-* 本模板是基于 [MVPArms](https://github.com/JessYanCoding/MVPArms) 开发的, 所以使用的是 **MVPArms** 的整体架构, 模板依赖了 **MVPArms** 官方工程中的一些文件如 [config.gradle](https://github.com/JessYanCoding/MVPArms/blob/master/config.gradle), 最优的方式是直接 **clone** 或下载 **MVPArms** 的官方工程后, 在工程上面直接使用本模板, 开始业务的开发, 让您免于项目繁琐配置的烦恼
+* 可直接在新建的新工程中直接使用本模板, 开始业务的开发, 让您免于项目繁琐的配置, 快速开启 MVPArms 的世界
 
 * 本模板生成的是一个可以独立运行的 **Application Module**, 模板生成后您可以把 **MVPArms** 官方工程中的 **app (Demo)** 和 **arms** 两个 **Module** 同时删除掉, 这样, 一个完全属于您及您公司的 **MVP + Dagger2 + Retrofit + Rxjava** 项目就这样轻而易举的诞生了
 
