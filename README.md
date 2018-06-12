@@ -25,9 +25,9 @@
 ![step](art/step.jpg)
 
 ## 注意事项
-* 可直接在新建的新工程中直接使用本模板, 开始业务的开发, 让您免于项目繁琐的配置, 快速开启 MVPArms 的世界
+* 建议直接在新建的新工程中使用本模板, 开始业务的开发, 让您免于项目繁琐的配置, 快速开启 MVPArms 的世界
 
-* 本模板生成的是一个可以独立运行的 **Application Module**, 模板生成后您可以把 **MVPArms** 官方工程中的 **app (Demo)** 和 **arms** 两个 **Module** 同时删除掉, 这样, 一个完全属于您及您公司的 **MVP + Dagger2 + Retrofit + Rxjava** 项目就这样轻而易举的诞生了
+* 本模板生成的是一个可以独立运行的 **Application Module**, 模板生成后一个完全属于您及您公司的 **MVP + Dagger2 + Retrofit + Rxjava** 项目就这样轻而易举的诞生了
 
 * 此模板会持续保持更新, 但只保证能够兼容最新的 **AndroidStudio 稳定版**, 暂不提供其他版本
 
