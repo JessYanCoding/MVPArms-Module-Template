@@ -48,7 +48,7 @@ android {
 
 dependencies {
     ${getConfigurationName("compile")} fileTree(dir: 'libs', include: ['*.jar'])
-    ${getConfigurationName("compile")} 'me.jessyan:arms:+'
+    ${getConfigurationName("compile")} 'me.jessyan:arms:2.4.1'
     //view
     annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
         exclude module: 'support-annotations'
