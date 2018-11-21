@@ -48,13 +48,26 @@ android {
 
 dependencies {
     ${getConfigurationName("compile")} fileTree(dir: 'libs', include: ['*.jar'])
-    ${getConfigurationName("compile")} 'me.jessyan:arms:2.4.1'
+    ${getConfigurationName("compile")} 'me.jessyan:arms:2.5.0'
+    ${getConfigurationName("compile")} 'me.jessyan:arms-imageloader-glide:2.5.0'
+
     //view
+    ${getConfigurationName("compile")} rootProject.ext.dependencies["autosize"]
     annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
         exclude module: 'support-annotations'
     }
+    
     //tools
     annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+
+    //注意 Arms 核心库现在并不会依赖某个 EventBus, 要想使用 EventBus, 还请在项目中自行依赖对应的 EventBus
+    //现在支持两种 EventBus, greenrobot 的 EventBus 和畅销书 《Android源码设计模式解析与实战》的作者 何红辉 所作的 AndroidEventBus
+    //依赖后 Arms 会自动检测您依赖的 EventBus 并自动注册
+    //建议使用 AndroidEventBus, 特别是组件化项目, 原因请看 https://github.com/hehonghui/AndroidEventBus/issues/49
+    //这种做法可以让使用者有自行选择三方库的权利, 并且还可以减轻 Arms 的体积
+    ${getConfigurationName("compile")} rootProject.ext.dependencies["androideventbus"]
+//    ${getConfigurationName("compile")} rootProject.ext.dependencies["eventbus"]
+
     //test
     debugImplementation rootProject.ext.dependencies["canary-debug"]
     releaseImplementation rootProject.ext.dependencies["canary-release"]
