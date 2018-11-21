@@ -50,6 +50,8 @@
     <open file="${projectOut}/src/main/java/${slashedPackageName(packageName)}/app/AppLifecyclesImpl.java" />
     <instantiate from="root/src/app_package/ActivityLifecycleCallbacksImpl.java.ftl"
                    to="${projectOut}/src/main/java/${slashedPackageName(packageName)}/app/ActivityLifecycleCallbacksImpl.java" />
+    <instantiate from="root/src/app_package/FragmentLifecycleCallbacksImpl.java.ftl"
+                   to="${projectOut}/src/main/java/${slashedPackageName(packageName)}/app/FragmentLifecycleCallbacksImpl.java" />
     <instantiate from="root/src/app_package/GlobalHttpHandlerImpl.java.ftl"
                    to="${projectOut}/src/main/java/${slashedPackageName(packageName)}/app/GlobalHttpHandlerImpl.java" />
     <instantiate from="root/src/app_package/ResponseErrorListenerImpl.java.ftl"
