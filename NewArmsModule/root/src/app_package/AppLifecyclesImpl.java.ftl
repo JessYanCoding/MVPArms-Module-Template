@@ -5,6 +5,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 
 import com.jess.arms.base.delegate.AppLifecycles;
+import com.jess.arms.integration.cache.IntelligentCache;
 import com.jess.arms.utils.ArmsUtils;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
@@ -52,19 +53,11 @@ public class AppLifecyclesImpl implements AppLifecycles {
             ButterKnife.setDebug(true);
         }
         //LeakCanary 内存泄露检查
-        ArmsUtils.obtainAppComponentFromContext(application).extras().put(RefWatcher.class.getName(), BuildConfig.USE_CANARY ? LeakCanary.install(application) : RefWatcher.DISABLED);
-        //扩展 AppManager 的远程遥控功能
-//        ArmsUtils.obtainAppComponentFromContext(application).appManager().setHandleListener((appManager, message) -> {
-//            switch (message.what) {
-                //case 0:
-                //do something ...
-                //   break;
-//            }
-//        });
-        //Usage:
-        //Message msg = new Message();
-        //msg.what = 0;
-        //AppManager.post(msg); like EventBus
+        //使用 IntelligentCache.KEY_KEEP 作为 key 的前缀, 可以使储存的数据永久存储在内存中
+        //否则存储在 LRU 算法的存储空间中, 前提是 extras 使用的是 IntelligentCache (框架默认使用)
+        ArmsUtils.obtainAppComponentFromContext(application).extras()
+                .put(IntelligentCache.getKeyOfKeep(RefWatcher.class.getName())
+                        , BuildConfig.USE_CANARY ? LeakCanary.install(application) : RefWatcher.DISABLED);
     }
 
     @Override
