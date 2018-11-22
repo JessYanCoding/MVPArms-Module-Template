@@ -16,7 +16,7 @@ import io.reactivex.schedulers.Schedulers;
  * ================================================
  * 放置便于使用 RxJava 的一些工具方法
  * <p>
- * Created by MVPArmsTemplate
+ * Created by MVPArmsTemplate on ${.now?string["MM/dd/yyyy HH:mm"]}
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================

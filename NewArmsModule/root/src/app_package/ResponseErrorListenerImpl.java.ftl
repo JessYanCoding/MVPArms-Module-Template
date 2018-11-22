@@ -20,7 +20,7 @@ import timber.log.Timber;
  * ================================================
  * 展示 {@link ResponseErrorListener} 的用法
  * <p>
- * Created by MVPArmsTemplate
+ * Created by MVPArmsTemplate on ${.now?string["MM/dd/yyyy HH:mm"]}
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
