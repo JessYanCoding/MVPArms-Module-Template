@@ -48,8 +48,8 @@ android {
 
 dependencies {
     ${getConfigurationName("compile")} fileTree(dir: 'libs', include: ['*.jar'])
-    ${getConfigurationName("compile")} 'me.jessyan:arms:2.5.0'
-    ${getConfigurationName("compile")} 'me.jessyan:arms-imageloader-glide:2.5.0'
+    ${getConfigurationName("compile")} 'me.jessyan:arms:2.5.1'
+    ${getConfigurationName("compile")} 'me.jessyan:arms-imageloader-glide:2.5.1'
 
     //view
     ${getConfigurationName("compile")} rootProject.ext.dependencies["autosize"]
